@@ -1,10 +1,36 @@
+@use "~@mezzanine-ui/system/palette" as mzn-palette;
+
 .root {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
   padding-left: var(--page-layout-padding-left);
+  padding-right: 40px;
+  gap: 80px;
 
   .content {
     width: var(--content-width);
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 60px;
+  }
+
+  .scrollSpy {
+    flex: 1;
+
+    .linkItem {
+      display: flex;
+      align-items: center;
+      height: 24px;
+      text-decoration: none;
+      border-left: 1px solid mzn-palette.color(border);
+      padding-left: 12px;
+      color: mzn-palette.color(text-secondary);
+
+      &:hover {
+        border-left-color: mzn-palette.color(primary);
+        color: mzn-palette.color(primary);
+      }
+    }
   }
 }
