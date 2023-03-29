@@ -3,6 +3,7 @@
 @use '~@mezzanine-ui/system/spacing' as mzn-spacing;
 @use '~@mezzanine-ui/system/z-index' as mzn-z-index;
 @use '~@mezzanine-ui/system/palette' as mzn-palette;
+@import './constants.scss';
 
 $override-colors: (
   light: (
@@ -156,6 +157,7 @@ $override-colors: (
 
 .mzn-tabs__tab-bar {
   margin-bottom: 40px;
+  padding-left: var(--page-layout-padding-left);
 
   .mzn-tabs__tabs {
     column-gap: 0;

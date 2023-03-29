@@ -1,5 +1,6 @@
-@import  './responsive.scss';
-@import  './mezzanine.scss';
+@import './responsive.scss';
+@import './mezzanine.scss';
+@import './constants.scss';
 
 * {
   font-family: Noto Sans, Noto Sans TC, sans-serif;
@@ -9,8 +10,6 @@
 }
 
 :root {
-  --sidebar-width: 300px;
-
   /* grid system */
   --grid-system-margin: calc((100% - #{$gs-content-max-width}) / 2);
   --grid-system-gap: #{$gs-gutter-1681};
