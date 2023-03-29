@@ -18,7 +18,7 @@ const PageLayout: FC<PageLayoutProps> = ({
     <div className={classes.root}>
       <div className={classes.head}>
         <div className={classes.block}>
-          <Typography variant="h1" color="text-primary" className={classes.title}>
+          <Typography variant="h1" color="text-primary">
             {title}
           </Typography>
           <Typography variant="body1" color="text-primary" className={classes.description}>
