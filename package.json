@@ -11,6 +11,7 @@
     "@mezzanine-ui/system": "^0.12.4",
     "@nrwl/next": "15.8.5",
     "next": "13.1.1",
+    "qs": "^6.11.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tslib": "^2.3.0"
