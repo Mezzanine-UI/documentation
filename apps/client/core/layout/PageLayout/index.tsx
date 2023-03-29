@@ -1,5 +1,8 @@
 import {
   Typography,
+  Tabs,
+  TabPane,
+  Tab,
 } from '@mezzanine-ui/react';
 import classes from './index.module.scss';
 
@@ -16,6 +19,24 @@ const PageLayout: FC = () => {
           </Typography>
         </div>
       </div>
+      <Tabs>
+        <TabPane
+          key="Design Guidelines"
+          tab={(
+            <Tab>Design Guidelines</Tab>
+          )}
+        >
+          Design Guidelines
+        </TabPane>
+        <TabPane
+          key="Code & Examples"
+          tab={(
+            <Tab>Code & Examples</Tab>
+          )}
+        >
+          Code & Examples
+        </TabPane>
+      </Tabs>
     </div>
   );
 }
