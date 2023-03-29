@@ -5,6 +5,7 @@ const { withNx } = require('@nrwl/next/plugins/with-nx');
  **/
 const nextConfig = {
   nx: { svgr: false },
+  reactStrictMode: true,
   transpilePackages: [
     '@mezzanine-ui/core',
     '@mezzanine-ui/react',

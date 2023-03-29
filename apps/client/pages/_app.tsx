@@ -1,4 +1,5 @@
 import { AppProps } from 'next/app';
+import { StrictMode } from 'react';
 import Head from 'next/head';
 import Header from '@core/ui/Header';
 import Sidebar from '@core/ui/Sidebar';
@@ -7,7 +8,7 @@ import '../styles/global.scss';
 
 function App({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <StrictMode>
       <Head>
         <title>Welcome to client!</title>
       </Head>
@@ -20,7 +21,7 @@ function App({ Component, pageProps }: AppProps) {
           </div>
         </div>
       </main>
-    </>
+    </StrictMode>
   );
 }
 
