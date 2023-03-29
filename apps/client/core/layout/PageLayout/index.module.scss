@@ -1,0 +1,19 @@
+.root {
+  .head {
+    padding-top: 40px;
+    padding-left: 80px;
+    padding-bottom: 28px;
+
+    .block {
+      width: 780px;
+
+      .title {
+        font-weight: 500;
+      }
+
+      .description {
+        margin-top: 20px;
+      }
+    }
+  }
+}

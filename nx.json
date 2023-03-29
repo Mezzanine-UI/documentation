@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "npmScope": "ting-templates",
+  "npmScope": "documentation",
   "tasksRunnerOptions": {
     "default": {
       "runner": "@nrwl/nx-cloud",
