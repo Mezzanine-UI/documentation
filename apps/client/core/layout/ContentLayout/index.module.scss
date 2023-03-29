@@ -1,7 +1,10 @@
 .root {
-  width: 780px;
   padding-left: var(--page-layout-padding-left);
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+
+  .content {
+    width: var(--content-width);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
 }

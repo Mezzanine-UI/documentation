@@ -5,7 +5,7 @@
     padding-bottom: 12px;
 
     .block {
-      width: 780px;
+      width: var(--content-width);
 
       .description {
         margin-top: 20px;
