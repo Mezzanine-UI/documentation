@@ -1,5 +1,6 @@
 import { Typography } from '@mezzanine-ui/react';
 import Quotation from '@core/ui/Quotation';
+import UnorderedList from '@core/ui/UnorderedList';
 import classes from './index.module.scss';
 
 const ContentLayout: FC = () => {
@@ -22,6 +23,7 @@ const ContentLayout: FC = () => {
         <Typography variant="body1" color="text-primary">
           Primarily for use in forms, checkboxes are used to collect input from users. Users can select a number of options ranging from zero to multiple options.
         </Typography>
+        <UnorderedList title="Use checkboxes when:" items={['users have to select one or more options from a list of related items', 'an explicit action is required to apply settings.']} />
       </div>
     </div>
   );
