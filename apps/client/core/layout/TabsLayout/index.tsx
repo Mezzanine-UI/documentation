@@ -25,8 +25,8 @@ const TabsLayout = <T extends string>({
     push,
   } = useRouter();
 
-  const [tabId, setTabId] = useState<string>(tabs[0].id);
   const tabQs = useMemo(() => (query.tab as string) ?? undefined, [query.tab]);
+  const [tabId, setTabId] = useState<string>(tabQs ?? tabs[0].id);
   const prevTabId = usePreviousValue(tabId);
   const prevTabQs = usePreviousValue(tabQs);
 

@@ -25,4 +25,8 @@ function App({ Component, pageProps }: AppProps) {
   );
 }
 
+App.getInitialProps = async () => {
+  return {};
+}
+
 export default App;

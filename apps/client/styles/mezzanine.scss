@@ -158,6 +158,18 @@ $override-colors: (
 .mzn-tabs__tab-bar {
   margin-bottom: 40px;
   padding-left: var(--page-layout-padding-left);
+  border-bottom: none;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: mzn-palette.color(border);
+  }
 
   .mzn-tabs__tabs {
     column-gap: 0;
@@ -178,6 +190,7 @@ $override-colors: (
           width: 100%;
           height: 2px;
           background-color: mzn-palette.color(primary);
+          z-index: 2;
         }
       }
     }
