@@ -1,6 +1,8 @@
 import { Typography } from '@mezzanine-ui/react';
 import GapLayout from '@core/layout/GapLayout';
 import UnorderedList from '@core/ui/UnorderedList';
+import Messenger from '@core/ui/Messenger';
+import CodeExample from '@core/ui/CodeExample';
 import Table from '@core/ui/Table';
 
 const Code: FC = () => {
@@ -16,6 +18,7 @@ const Code: FC = () => {
               <Typography variant="h4" color="text-primary">
                 Default
               </Typography>
+              <Messenger>Ver.3.0 Notice</Messenger>
               <UnorderedList
                 items={[
                   'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -24,6 +27,7 @@ const Code: FC = () => {
                   'Proin accumsan nulla semper velit rutrum varius. Ut id purus felis. Nullam tempus, nisl a faucibus tristique, urna ligula facilisis orci, id dapibus magna lacus eu neque. ',
                 ]}
               />
+              <CodeExample />
             </GapLayout>
             <GapLayout gap={12}>
               <Typography variant="h4" color="text-primary">
