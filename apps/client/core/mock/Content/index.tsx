@@ -62,22 +62,22 @@ const Content: FC = () => {
           <Behavior
             title="Behavior 1"
             content={{
-              do: <UnorderedList items={['users have to select one or more options from a list of related items', 'Fusce placerat orci egestas tristique pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit.']} />,
-              dont: <UnorderedList items={['users have to select one or more options from a list of related items', 'Fusce placerat orci egestas tristique pretium. Lorem ipsum dolor sit amet']} />,
+              do: <UnorderedList items={['Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'Fusce placerat orci egestas tristique pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit.']} />,
+              dont: <UnorderedList items={['Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'Fusce placerat orci egestas tristique pretium. Lorem ipsum dolor sit amet']} />,
             }}
           />
           <Behavior
             title="Behavior 2"
             content={{
-              do: <UnorderedList items={['users have to select one or more options from a list of related items', 'Fusce placerat orci egestas tristique pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit.']} />,
-              dont: <UnorderedList items={['users have to select one or more options from a list of related items', 'Fusce placerat orci egestas tristique pretium. Lorem ipsum dolor sit amet']} />,
+              do: <UnorderedList items={['Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'Fusce placerat orci egestas tristique pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit.']} />,
+              dont: <UnorderedList items={['Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'Fusce placerat orci egestas tristique pretium. Lorem ipsum dolor sit amet']} />,
             }}
           />
           <Behavior
             title="Behavior 3"
             content={{
-              do: <UnorderedList items={['users have to select one or more options from a list of related items', 'Fusce placerat orci egestas tristique pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit.']} />,
-              dont: <UnorderedList items={['users have to select one or more options from a list of related items', 'Fusce placerat orci egestas tristique pretium. Lorem ipsum dolor sit amet']} />,
+              do: <UnorderedList items={['Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'Fusce placerat orci egestas tristique pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit.']} />,
+              dont: <UnorderedList items={['Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'Fusce placerat orci egestas tristique pretium. Lorem ipsum dolor sit amet']} />,
             }}
           />
         </GapLayout>

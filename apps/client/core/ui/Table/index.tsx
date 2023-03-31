@@ -42,12 +42,12 @@ const Table: FC<TableProps> = ({
     {
       title: 'Type',
       dataIndex: 'type',
-      render: (source) => `${source.type || '-'}`,
+      render: (source) => source.type ? <Typography variant="body2" color="text-primary" className={classes.code}>{source.type}</Typography> : '-',
     },
     {
       title: 'Default',
       dataIndex: 'default',
-      render: (source) => `${source.default || '-'}`,
+      render: (source) => source.default ? <Typography variant="body2" color="text-primary" className={classes.code}>{source.default}</Typography> : '-',
     }
   ];
 

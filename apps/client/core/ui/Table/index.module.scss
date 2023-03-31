@@ -1,4 +1,14 @@
+@use "~@mezzanine-ui/system/palette" as mzn-palette;
+
 .description {
-  word-break: break-all;
+  width: 100%;
   white-space: pre-line;
+}
+
+.code {
+  font-family: 'Source Code Pro';
+  background-color: mzn-palette.color(action-disabled-bg);
+  border: 1px solid mzn-palette.color(border);
+  border-radius: 2px;
+  padding: 2px 4px;
 }
