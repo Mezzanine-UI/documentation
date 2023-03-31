@@ -27,14 +27,18 @@ const ScrollSpy: FC<ScrollSpyProps> & {
   const ref = useRef<HTMLElement | null>(
     (typeof window !== 'undefined' ? window.document.getElementById(SCROLL_SPY_PORTAL_UID) : null) || null,
   );
-  const { current, children } = useScrollSpy(containerRef);
+  const { current, children, setCurrent } = useScrollSpy(containerRef);
 
   const handleClickItem = useCallback((item: HTMLElement) => {
+    if (item.dataset.scrollSpy) {
+      setCurrent(item.dataset.scrollSpy);
+    }
+
     scrollIntoView(item, {
       time: 200,
       align: { top: 0, topOffset: 0 },
     });
-  }, []);
+  }, [setCurrent]);
 
   useEffect(() => {
     ref.current =

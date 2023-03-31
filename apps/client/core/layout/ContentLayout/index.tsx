@@ -32,6 +32,29 @@ const ContentLayout: FC = () => {
           </Typography>
           <UnorderedList title="Use checkboxes when:" items={['users have to select one or more options from a list of related items', 'an explicit action is required to apply settings.']} />
         </div>
+        <div data-scroll-spy="States">
+          <Typography variant="h2" color="text-primary">
+            States
+          </Typography>
+          <Typography variant="body1" color="text-primary">
+            Primarily for use in forms, checkboxes are used to collect input from users. Users can select a number of options ranging from zero to multiple options.
+          </Typography>
+          <UnorderedList title="Use checkboxes when:" items={['users have to select one or more options from a list of related items', 'an explicit action is required to apply settings.']} />
+        </div>
+        <div data-scroll-spy="Content guidelines">
+          <Typography variant="h2" color="text-primary">
+            Content guidelines
+          </Typography>
+          <UnorderedList items={['users have to select one or more options from a list of related items', 'an explicit action is required to apply settings.']} />
+        </div>
+        <div data-scroll-spy="Accessibility (Do And Don’t)">
+          <Typography variant="h2" color="text-primary">
+            Accessibility (Do And Don’t)
+          </Typography>
+          <Typography variant="body1" color="text-primary">
+            Primarily for use in forms, checkboxes are used to collect input from users. Users can select a number of options ranging from zero to multiple options.
+          </Typography>
+        </div>
       </div>
       <ScrollSpy containerRef={scrollSpyRef} />
     </div>

@@ -1,6 +1,10 @@
 @use "~@mezzanine-ui/system/palette" as mzn-palette;
 
 .root {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
   width: 160px;
 
   .navButton {
@@ -18,7 +22,7 @@
     }
 
     .navText {
-
+      font-weight: 400;
     }
   }
 }
