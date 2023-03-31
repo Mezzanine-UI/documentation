@@ -3,6 +3,7 @@ import { StrictMode } from 'react';
 import Head from 'next/head';
 import Header from '@core/components/Header';
 import Sidebar from '@core/components/Sidebar';
+import Footer from '@core/components/Footer';
 import classes from './app.module.scss';
 import '../styles/global.scss';
 
@@ -10,7 +11,7 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <StrictMode>
       <Head>
-        <title>Welcome to client!</title>
+        <title>Mezzanine</title>
       </Head>
       <main className={classes.main}>
         <Header />
@@ -18,6 +19,7 @@ function App({ Component, pageProps }: AppProps) {
           <Sidebar />
           <div className={classes.page}>
             <Component {...pageProps} />
+            <Footer />
           </div>
         </div>
       </main>
