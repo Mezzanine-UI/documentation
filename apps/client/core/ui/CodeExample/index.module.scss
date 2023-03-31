@@ -1,0 +1,19 @@
+@use "~@mezzanine-ui/system/palette" as mzn-palette;
+
+.root {
+  width: 100%;
+  border: 1px solid mzn-palette.color(border);
+  border-radius: 2px;
+
+  .componentWrapper {
+    padding: 20px 40px;
+  }
+
+  .actionsWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: mzn-palette.color(divider);
+    padding: 4px 12px;
+  }
+}
