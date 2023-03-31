@@ -16,4 +16,11 @@
     background-color: mzn-palette.color(divider);
     padding: 4px 12px;
   }
+
+  .codeWrapper {
+    padding: 12px 24px 24px;
+    background-color: mzn-palette.color(divider);
+    white-space: pre-line;
+    font-family: 'Source Code Pro';
+  }
 }

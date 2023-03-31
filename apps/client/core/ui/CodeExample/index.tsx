@@ -54,6 +54,11 @@ const CodeExample: FC = () => {
           </IconButton>
         </div>
       </div>
+      {isShown && (
+        <div className={classes.codeWrapper}>
+          {"import React from 'react';\nimport { Checkbox } from 'antd';\nimport type { CheckboxChangeEvent } from 'antd/es/checkbox';\n\nconst onChange = (e: CheckboxChangeEvent) => { console.log(`checked = ${e.target.checked}`); };\n\nconst App: React.FC = () => <Checkbox onChange={onChange}>Checkbox</Checkbox>;\n\nexport default App;"}
+        </div>
+      )}
     </div>
   );
 }
