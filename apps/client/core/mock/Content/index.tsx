@@ -1,6 +1,7 @@
 import { Typography } from '@mezzanine-ui/react';
 import Quotation from '@core/ui/Quotation';
 import UnorderedList from '@core/ui/UnorderedList';
+import Behavior from '@core/ui/Behavior';
 import classes from './index.module.scss';
 
 const Content: FC = () => {
@@ -49,6 +50,27 @@ const Content: FC = () => {
         <Typography variant="body1" color="text-primary">
           Primarily for use in forms, checkboxes are used to collect input from users. Users can select a number of options ranging from zero to multiple options.
         </Typography>
+        <Behavior
+          title="Behavior 1"
+          content={{
+            do: <UnorderedList items={['users have to select one or more options from a list of related items', 'Fusce placerat orci egestas tristique pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit.']} />,
+            dont: <UnorderedList items={['users have to select one or more options from a list of related items', 'Fusce placerat orci egestas tristique pretium. Lorem ipsum dolor sit amet']} />,
+          }}
+        />
+        <Behavior
+          title="Behavior 2"
+          content={{
+            do: <UnorderedList items={['users have to select one or more options from a list of related items', 'Fusce placerat orci egestas tristique pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit.']} />,
+            dont: <UnorderedList items={['users have to select one or more options from a list of related items', 'Fusce placerat orci egestas tristique pretium. Lorem ipsum dolor sit amet']} />,
+          }}
+        />
+        <Behavior
+          title="Behavior 3"
+          content={{
+            do: <UnorderedList items={['users have to select one or more options from a list of related items', 'Fusce placerat orci egestas tristique pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit.']} />,
+            dont: <UnorderedList items={['users have to select one or more options from a list of related items', 'Fusce placerat orci egestas tristique pretium. Lorem ipsum dolor sit amet']} />,
+          }}
+        />
       </div>
     </>
   );
