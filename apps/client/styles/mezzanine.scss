@@ -155,6 +155,7 @@ $override-colors: (
 
 @include mzn-core.styles();
 
+// tabs
 .mzn-tabs__tab-bar {
   margin-bottom: 40px;
   padding-left: var(--page-layout-padding-left);
@@ -195,4 +196,14 @@ $override-colors: (
       }
     }
   }
+}
+
+// table
+.mzn-table__cell {
+  padding: 0;
+}
+
+.mzn-table__header, .mzn-table__body__row {
+  padding: 10px 12px;
+  gap: 20px;
 }
