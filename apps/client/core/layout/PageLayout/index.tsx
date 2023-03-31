@@ -4,6 +4,7 @@ import {
 import TabsLayout from '@core/layout/TabsLayout';
 import ContentLayout from '@core/layout/ContentLayout';
 import Content from '@core/mock/Content';
+import Code from '@core/mock/Code';
 import classes from './index.module.scss';
 
 type PageLayoutProps = {
@@ -30,11 +31,11 @@ const PageLayout: FC<PageLayoutProps> = ({
       <TabsLayout tabs={[{
         id: 'Design Guidelines',
         name: 'Design Guidelines',
-        component: <ContentLayout><Content /></ContentLayout>
+        component: <ContentLayout><Content /></ContentLayout>,
       }, {
         id: 'Code & Examples',
         name: 'Code & Examples',
-        component: <div>Code</div>
+        component: <ContentLayout><Code /></ContentLayout>,
       }]} />
     </div>
   );

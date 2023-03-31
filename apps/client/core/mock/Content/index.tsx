@@ -2,12 +2,11 @@ import { Typography } from '@mezzanine-ui/react';
 import Quotation from '@core/ui/Quotation';
 import UnorderedList from '@core/ui/UnorderedList';
 import Behavior from '@core/ui/Behavior';
-import classes from './index.module.scss';
 
 const Content: FC = () => {
   return (
     <>
-      <div data-scroll-spy="When To Use" className={classes.section}>
+      <div data-scroll-spy="When To Use">
         <Typography variant="h2" color="text-primary">
           When To Use
         </Typography>
@@ -19,7 +18,7 @@ const Content: FC = () => {
           Praesent molestie enim et sem bibendum, id sagittis velit volutpat. Sed nec magna vehicula, nulla semper velit venenatis ante et, rhoncus odio.
         </Typography>
       </div>
-      <div data-scroll-spy="Apperance and Styles" className={classes.section}>
+      <div data-scroll-spy="Apperance and Styles">
         <Typography variant="h2" color="text-primary">
           Apperance and Styles
         </Typography>
@@ -28,7 +27,7 @@ const Content: FC = () => {
         </Typography>
         <UnorderedList title="Use checkboxes when:" items={['users have to select one or more options from a list of related items', 'an explicit action is required to apply settings.']} />
       </div>
-      <div data-scroll-spy="States" className={classes.section}>
+      <div data-scroll-spy="States">
         <Typography variant="h2" color="text-primary">
           States
         </Typography>
@@ -37,13 +36,13 @@ const Content: FC = () => {
         </Typography>
         <UnorderedList title="Use checkboxes when:" items={['users have to select one or more options from a list of related items', 'an explicit action is required to apply settings.']} />
       </div>
-      <div data-scroll-spy="Content guidelines" className={classes.section}>
+      <div data-scroll-spy="Content guidelines">
         <Typography variant="h2" color="text-primary">
           Content guidelines
         </Typography>
         <UnorderedList items={['users have to select one or more options from a list of related items', 'an explicit action is required to apply settings.']} />
       </div>
-      <div data-scroll-spy="Accessibility (Do And Don’t)" className={classes.section}>
+      <div data-scroll-spy="Accessibility (Do And Don’t)">
         <Typography variant="h2" color="text-primary">
           Accessibility (Do And Don’t)
         </Typography>
