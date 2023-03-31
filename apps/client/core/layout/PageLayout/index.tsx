@@ -3,6 +3,7 @@ import {
 } from '@mezzanine-ui/react';
 import TabsLayout from '@core/layout/TabsLayout';
 import ContentLayout from '@core/layout/ContentLayout';
+import Content from '@core/mock/Content';
 import classes from './index.module.scss';
 
 type PageLayoutProps = {
@@ -29,11 +30,11 @@ const PageLayout: FC<PageLayoutProps> = ({
       <TabsLayout tabs={[{
         id: 'Design Guidelines',
         name: 'Design Guidelines',
-        component: <ContentLayout />
+        component: <ContentLayout><Content /></ContentLayout>
       }, {
         id: 'Code & Examples',
         name: 'Code & Examples',
-        component: <ContentLayout />
+        component: <div>Code</div>
       }]} />
     </div>
   );

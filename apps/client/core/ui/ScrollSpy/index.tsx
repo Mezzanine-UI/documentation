@@ -43,7 +43,7 @@ const ScrollSpy: FC<ScrollSpyProps> & {
   return (
     <div className={classes.root}>
       {children?.map((scrollSpyItem: HTMLDivElement) => {
-        const { dataset: { scrollSpy = '' } } = scrollSpyItem;
+        const scrollSpy = scrollSpyItem?.dataset?.scrollSpy ?? '';
 
         return (
           !!scrollSpy && (
