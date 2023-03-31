@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { CopyBlock, github } from "react-code-blocks";
 import {
   Button,
   Icon,
@@ -15,8 +16,10 @@ import {
 } from '@public/icons';
 import classes from './index.module.scss';
 
+const code = "import React from 'react';\nimport { Checkbox } from 'antd';\nimport type { CheckboxChangeEvent } from 'antd/es/checkbox';\n\nconst onChange = (e: CheckboxChangeEvent) => { console.log(`checked = ${e.target.checked}`); };\n\nconst App: React.FC = () => <Checkbox onChange={onChange}>Checkbox</Checkbox>;\n\nexport default App;";
+
 const CodeExample: FC = () => {
-  const [isShown, setIsShown] = useState(false);
+  const [isShown, setIsShown] = useState(true);
   const [isDark, setIsDark] = useState(false);
 
   return (
@@ -56,7 +59,12 @@ const CodeExample: FC = () => {
       </div>
       {isShown && (
         <div className={classes.codeWrapper}>
-          {"import React from 'react';\nimport { Checkbox } from 'antd';\nimport type { CheckboxChangeEvent } from 'antd/es/checkbox';\n\nconst onChange = (e: CheckboxChangeEvent) => { console.log(`checked = ${e.target.checked}`); };\n\nconst App: React.FC = () => <Checkbox onChange={onChange}>Checkbox</Checkbox>;\n\nexport default App;"}
+          <CopyBlock
+            language="tsx"
+            text={code}
+            showLineNumbers={false}
+            theme={github}
+          />
         </div>
       )}
     </div>

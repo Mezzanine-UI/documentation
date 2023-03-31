@@ -39,6 +39,7 @@ const Code: FC = () => {
                   'Fusce placerat orci egestas tristique pretium.',
                 ]}
               />
+              <CodeExample />
             </GapLayout>
             <GapLayout gap={12}>
               <Typography variant="h4" color="text-primary">
