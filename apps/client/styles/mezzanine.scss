@@ -207,3 +207,7 @@ $override-colors: (
   padding: 10px 12px;
   gap: 20px;
 }
+
+.mzn-table__body {
+  overscroll-behavior: unset;
+}
