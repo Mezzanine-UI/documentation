@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { ReactElement, useState } from 'react';
 import { CopyBlock } from "react-code-blocks";
 import {
   Button,
@@ -18,19 +18,21 @@ import { theme } from './constants/theme';
 import classes from './index.module.scss';
 
 type CodeExampleProps = {
+  sample: ReactElement;
   code: string;
 }
 
 const CodeExample: FC<CodeExampleProps> = ({
+  sample,
   code,
 }) => {
-  const [isShown, setIsShown] = useState(true);
+  const [isShown, setIsShown] = useState(false);
   const [isDark, setIsDark] = useState(false);
 
   return (
     <div className={classes.root}>
       <div className={classes.componentWrapper}>
-        預設文字
+        {sample}
       </div>
       <div className={classes.actionsWrapper}>
         <Button

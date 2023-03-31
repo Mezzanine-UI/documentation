@@ -1,4 +1,4 @@
-import { Typography } from '@mezzanine-ui/react';
+import { Typography, Checkbox } from '@mezzanine-ui/react';
 import GapLayout from '@core/layout/GapLayout';
 import UnorderedList from '@core/ui/UnorderedList';
 import Messenger from '@core/ui/Messenger';
@@ -27,9 +27,6 @@ const Code: FC = () => {
                   'Proin accumsan nulla semper velit rutrum varius. Ut id purus felis. Nullam tempus, nisl a faucibus tristique, urna ligula facilisis orci, id dapibus magna lacus eu neque. ',
                 ]}
               />
-              <CodeExample
-                code={"import React from 'react';\nimport { Checkbox } from 'antd';\nimport type { CheckboxChangeEvent } from 'antd/es/checkbox';\n\nconst onChange = (e: CheckboxChangeEvent) => { console.log(`checked = ${e.target.checked}`); };\n\nconst App: React.FC = () => <Checkbox onChange={onChange}>Checkbox</Checkbox>;\n\nexport default App;"}
-              />
             </GapLayout>
             <GapLayout gap={12}>
               <Typography variant="h4" color="text-primary">
@@ -42,7 +39,10 @@ const Code: FC = () => {
                 ]}
               />
               <CodeExample
-                code={"import React from 'react';\nimport { Checkbox } from 'antd';\nimport type { CheckboxChangeEvent } from 'antd/es/checkbox';\n\nconst onChange = (e: CheckboxChangeEvent) => { console.log(`checked = ${e.target.checked}`); };\n\nconst App: React.FC = () => <Checkbox onChange={onChange}>Checkbox</Checkbox>;\n\nexport default App;"}
+                sample={(
+                  <Checkbox size="large" defaultChecked>預設文字</Checkbox>
+                )}
+                code={"import React from 'react';\nimport { Checkbox } from 'antd';\nimport type { CheckboxChangeEvent } from 'antd/es/checkbox';\n\nconst onChange = (e: CheckboxChangeEvent) => { \n  console.log(`checked = ${e.target.checked}`); \n};\n\nconst App: React.FC = () => { \n  return (\n    <Checkbox onChange={onChange}>Checkbox</Checkbox>\n  );\n};\n\nexport default App;"}
               />
             </GapLayout>
             <GapLayout gap={12}>
