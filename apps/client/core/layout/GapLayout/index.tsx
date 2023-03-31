@@ -1,9 +1,9 @@
-import { ReactElement } from 'react';
+import { ReactNode } from 'react';
 import { cx } from '@mezzanine-ui/react';
 import classes from './index.module.scss';
 
 type GapLayoutProps = {
-  children: ReactElement | ReactElement[];
+  children: ReactNode | ReactNode[];
   horizontal?: boolean;
   gap: number;
 }

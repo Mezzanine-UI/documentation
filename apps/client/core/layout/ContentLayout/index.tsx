@@ -3,7 +3,7 @@ import ScrollSpy from '@core/ui/ScrollSpy';
 import classes from './index.module.scss';
 
 type ContentLayoutProps = {
-  children: ReactElement;
+  children: ReactElement; // must be ReactElement since scroll-spy.
 }
 
 const ContentLayout: FC<ContentLayoutProps> = ({
