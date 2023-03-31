@@ -27,7 +27,7 @@ export function useScrollSpy(
   }, []);
 
   useIntersectionObserver(children, cb, {
-    rootMargin: '-25% 0px -75%',
+    rootMargin: '-15% 0px -85%',
   });
 
   useEffect(() => {
