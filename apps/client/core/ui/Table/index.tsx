@@ -1,13 +1,9 @@
-import dynamic from 'next/dynamic';
 import {
   Typography,
+  Table as MznTable,
 } from '@mezzanine-ui/react';
 import { TableColumn } from '@mezzanine-ui/core/table';
 import classes from './index.module.scss';
-
-const MznTable = dynamic(() => import("@mezzanine-ui/react/Table"), {
-  ssr: false,
-});
 
 type DataSource = {
   id: string;

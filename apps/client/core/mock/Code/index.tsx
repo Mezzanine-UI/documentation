@@ -1,9 +1,14 @@
+import dynamic from 'next/dynamic';
 import { Typography, Checkbox } from '@mezzanine-ui/react';
 import GapLayout from '@core/layout/GapLayout';
 import UnorderedList from '@core/ui/UnorderedList';
 import Messenger from '@core/ui/Messenger';
 import CodeExample from '@core/ui/CodeExample';
-import Table from '@core/ui/Table';
+// import Table from '@core/ui/Table';
+
+const Table = dynamic(() => import("@core/ui/Table"), {
+  ssr: false,
+});
 
 const Code: FC = () => {
   return (
