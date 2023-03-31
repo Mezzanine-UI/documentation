@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { CopyBlock, github } from "react-code-blocks";
+import { CopyBlock } from "react-code-blocks";
 import {
   Button,
   Icon,
@@ -14,6 +14,7 @@ import {
   MoonIcon,
   SunIcon,
 } from '@public/icons';
+import { theme } from './constants/theme';
 import classes from './index.module.scss';
 
 const code = "import React from 'react';\nimport { Checkbox } from 'antd';\nimport type { CheckboxChangeEvent } from 'antd/es/checkbox';\n\nconst onChange = (e: CheckboxChangeEvent) => { console.log(`checked = ${e.target.checked}`); };\n\nconst App: React.FC = () => <Checkbox onChange={onChange}>Checkbox</Checkbox>;\n\nexport default App;";
@@ -63,7 +64,7 @@ const CodeExample: FC = () => {
             language="tsx"
             text={code}
             showLineNumbers={false}
-            theme={github}
+            theme={theme}
           />
         </div>
       )}
