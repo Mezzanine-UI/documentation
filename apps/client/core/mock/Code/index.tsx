@@ -27,7 +27,9 @@ const Code: FC = () => {
                   'Proin accumsan nulla semper velit rutrum varius. Ut id purus felis. Nullam tempus, nisl a faucibus tristique, urna ligula facilisis orci, id dapibus magna lacus eu neque. ',
                 ]}
               />
-              <CodeExample />
+              <CodeExample
+                code={"import React from 'react';\nimport { Checkbox } from 'antd';\nimport type { CheckboxChangeEvent } from 'antd/es/checkbox';\n\nconst onChange = (e: CheckboxChangeEvent) => { console.log(`checked = ${e.target.checked}`); };\n\nconst App: React.FC = () => <Checkbox onChange={onChange}>Checkbox</Checkbox>;\n\nexport default App;"}
+              />
             </GapLayout>
             <GapLayout gap={12}>
               <Typography variant="h4" color="text-primary">
@@ -39,7 +41,9 @@ const Code: FC = () => {
                   'Fusce placerat orci egestas tristique pretium.',
                 ]}
               />
-              <CodeExample />
+              <CodeExample
+                code={"import React from 'react';\nimport { Checkbox } from 'antd';\nimport type { CheckboxChangeEvent } from 'antd/es/checkbox';\n\nconst onChange = (e: CheckboxChangeEvent) => { console.log(`checked = ${e.target.checked}`); };\n\nconst App: React.FC = () => <Checkbox onChange={onChange}>Checkbox</Checkbox>;\n\nexport default App;"}
+              />
             </GapLayout>
             <GapLayout gap={12}>
               <Typography variant="h4" color="text-primary">

@@ -17,9 +17,13 @@ import {
 import { theme } from './constants/theme';
 import classes from './index.module.scss';
 
-const code = "import React from 'react';\nimport { Checkbox } from 'antd';\nimport type { CheckboxChangeEvent } from 'antd/es/checkbox';\n\nconst onChange = (e: CheckboxChangeEvent) => { console.log(`checked = ${e.target.checked}`); };\n\nconst App: React.FC = () => <Checkbox onChange={onChange}>Checkbox</Checkbox>;\n\nexport default App;";
+type CodeExampleProps = {
+  code: string;
+}
 
-const CodeExample: FC = () => {
+const CodeExample: FC<CodeExampleProps> = ({
+  code,
+}) => {
   const [isShown, setIsShown] = useState(true);
   const [isDark, setIsDark] = useState(false);
 
@@ -61,7 +65,7 @@ const CodeExample: FC = () => {
       {isShown && (
         <div className={classes.codeWrapper}>
           <CopyBlock
-            language="tsx"
+            language="jsx"
             text={code}
             showLineNumbers={false}
             theme={theme}
