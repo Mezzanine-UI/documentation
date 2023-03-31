@@ -1,5 +1,3 @@
-@use "~@mezzanine-ui/system/palette" as mzn-palette;
-
 .root {
   display: flex;
   align-items: flex-start;
@@ -13,24 +11,5 @@
     display: flex;
     flex-direction: column;
     gap: 60px;
-  }
-
-  .scrollSpy {
-    flex: 1;
-
-    .linkItem {
-      display: flex;
-      align-items: center;
-      height: 24px;
-      text-decoration: none;
-      border-left: 1px solid mzn-palette.color(border);
-      padding-left: 12px;
-      color: mzn-palette.color(text-secondary);
-
-      &:hover {
-        border-left-color: mzn-palette.color(primary);
-        color: mzn-palette.color(primary);
-      }
-    }
   }
 }

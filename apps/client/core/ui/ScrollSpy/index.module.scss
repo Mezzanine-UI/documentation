@@ -1,0 +1,24 @@
+@use "~@mezzanine-ui/system/palette" as mzn-palette;
+
+.root {
+  width: 160px;
+
+  .navButton {
+    padding: 0;
+    background-color: transparent !important;
+    border-left: 1px solid mzn-palette.color(border);
+    padding-left: 12px;
+
+    &.active, &:hover {
+      border-left-color: mzn-palette.color(primary);
+
+      .navText {
+        color: mzn-palette.color(primary);
+      }
+    }
+
+    .navText {
+
+    }
+  }
+}
