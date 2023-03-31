@@ -26,13 +26,21 @@ export function useScrollSpy(
     }
   }, []);
 
-  useIntersectionObserver(children, cb);
+  useIntersectionObserver(children, cb, {
+    rootMargin: '-20% 0px -80%',
+  });
 
   useEffect(() => {
     if (containerRef?.current && !children.length) {
       setChildren(Array.from(containerRef.current.childNodes) as HTMLDivElement[]);
     }
   }, []);
+
+  useEffect(() => {
+    if (!current && children.length > 0 && typeof children[0].dataset.scrollSpy === 'string') {
+      setCurrent(children[0].dataset.scrollSpy);
+    }
+  }, [current, children]);
 
   return {
     current,
