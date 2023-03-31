@@ -5,7 +5,6 @@ import {
   useCallback,
   useRef,
 } from 'react';
-import scrollIntoView from 'scroll-into-view';
 import { Button, Typography, cx } from '@mezzanine-ui/react';
 import { useScrollSpy } from '@core/hooks/useScrollSpy';
 import classes from './index.module.scss';
@@ -30,10 +29,7 @@ const ScrollSpy: FC<ScrollSpyProps> & {
   const { current, children } = useScrollSpy(containerRef);
 
   const handleClickItem = useCallback((item: HTMLElement) => {
-    scrollIntoView(item, {
-      time: 200,
-      align: { top: 0, topOffset: 0 },
-    });
+    item.scrollIntoView({ block: 'start' });
   }, []);
 
   useEffect(() => {
