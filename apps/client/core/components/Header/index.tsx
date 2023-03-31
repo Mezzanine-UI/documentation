@@ -39,11 +39,12 @@ const Header: FC = () => {
           </NavigationItem>
         </Navigation>
       </AppBarMain>
-      <AppBarSupport>
+      <AppBarSupport className={classes.support}>
         <Input
           placeholder="Search..."
           prefix={<Icon icon={SearchIcon} className={classes.icon} />}
           clearable
+          size="large"
         />
       </AppBarSupport>
     </AppBar>

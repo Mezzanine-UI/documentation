@@ -1,9 +1,10 @@
-import { ReactElement, useState } from 'react';
+import { ReactElement, useState, useCallback } from 'react';
 import { CopyBlock } from "react-code-blocks";
 import {
   Button,
   Icon,
   IconButton,
+  Message,
 } from '@mezzanine-ui/react';
 import {
   ChevronUpIcon,
@@ -28,6 +29,11 @@ const CodeExample: FC<CodeExampleProps> = ({
 }) => {
   const [isShown, setIsShown] = useState(false);
   const [isDark, setIsDark] = useState(false);
+
+  const onCopy = useCallback((text: string) => {
+    navigator.clipboard.writeText(text);
+    Message.success('複製成功！');
+  }, []);
 
   return (
     <div className={classes.root}>
@@ -59,6 +65,9 @@ const CodeExample: FC<CodeExampleProps> = ({
           <IconButton
             type="button"
             size="large"
+            onClick={() => {
+              onCopy(code);
+            }}
           >
             <Icon icon={CopyIcon} />
           </IconButton>
