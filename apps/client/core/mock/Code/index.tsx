@@ -1,6 +1,7 @@
 import { Typography } from '@mezzanine-ui/react';
 import GapLayout from '@core/layout/GapLayout';
 import UnorderedList from '@core/ui/UnorderedList';
+import Table from '@core/ui/Table';
 
 const Code: FC = () => {
   return (
@@ -51,6 +52,12 @@ const Code: FC = () => {
           <Typography variant="h2" color="text-primary">
             Props
           </Typography>
+          <GapLayout gap={12}>
+            <Typography variant="body1" color="text-primary">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce placerat orci egestas tristique pretium.
+            </Typography>
+            <Table />
+          </GapLayout>
         </GapLayout>
       </div>
     </>
